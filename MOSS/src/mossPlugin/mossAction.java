@@ -184,6 +184,7 @@ public final class mossAction implements ActionListener {
                 fileChooser.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY);
                 int returnVal = fileChooser.showOpenDialog(null);
                 if(returnVal != JFileChooser.APPROVE_OPTION) {
+                    path = null;
                     return;
                 }
                 if (fileChooser.getSelectedFile().getAbsolutePath()!=null){
